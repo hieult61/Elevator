@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"elevator_thangmay\startup_stm32f103xb.o"
+"elevator_thangmay\main.o"
+"elevator_thangmay\stm32f1xx_it.o"
+"elevator_thangmay\stm32f1xx_hal_msp.o"
+"elevator_thangmay\stm32f1xx_hal_gpio_ex.o"
+"elevator_thangmay\stm32f1xx_hal_tim.o"
+"elevator_thangmay\stm32f1xx_hal_tim_ex.o"
+"elevator_thangmay\stm32f1xx_hal.o"
+"elevator_thangmay\stm32f1xx_hal_rcc.o"
+"elevator_thangmay\stm32f1xx_hal_rcc_ex.o"
+"elevator_thangmay\stm32f1xx_hal_gpio.o"
+"elevator_thangmay\stm32f1xx_hal_dma.o"
+"elevator_thangmay\stm32f1xx_hal_cortex.o"
+"elevator_thangmay\stm32f1xx_hal_pwr.o"
+"elevator_thangmay\stm32f1xx_hal_flash.o"
+"elevator_thangmay\stm32f1xx_hal_flash_ex.o"
+"elevator_thangmay\stm32f1xx_hal_exti.o"
+"elevator_thangmay\system_stm32f1xx.o"
+--strict --scatter "Elevator_Thangmay\Elevator_Thangmay.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Elevator_Thangmay.map" -o Elevator_Thangmay\Elevator_Thangmay.axf
